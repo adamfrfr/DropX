@@ -42,10 +42,71 @@ button {
   background: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 20px;
   background: #111;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: white;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+}
+
+#profileContent h2 {
+  margin-top: 0;
+  color: #ff003c;
+}
+
+#profileContent h3 {
+  color: #5a00ff;
+}
+
+#profileContent ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#profileContent li {
+  margin: 5px 0;
 }

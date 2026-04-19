@@ -31,20 +31,30 @@
 <section id="team">
   <h2>Our Players</h2>
   <div class="players">
-    <div class="card">
-      <h3>RXZ</h3>
+    <div class="card" onclick="showProfile('RXZ')">
+      <h3>RZX</h3>
       <p>Role: Sniper</p>
     </div>
-    <div class="card">
+    <div class="card" onclick="showProfile('Nova')">
       <h3>Nova</h3>
       <p>Role: Support</p>
     </div>
-    <div class="card">
+    <div class="card" onclick="showProfile('Blaze')">
       <h3>Blaze</h3>
       <p>Role: Entry Fragger</p>
     </div>
   </div>
 </section>
+
+<!-- Player Profile Modal -->
+<div id="profileModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProfile()">&times;</span>
+    <div id="profileContent">
+      <!-- Profile content will be populated by JavaScript -->
+    </div>
+  </div>
+</div>
 
 <section id="contact">
   <h2>Contact Us</h2>
