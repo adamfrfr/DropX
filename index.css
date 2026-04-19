@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(45deg, #ff003c, #5a00ff);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff003c;
+  color: white;
+  cursor: pointer;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
