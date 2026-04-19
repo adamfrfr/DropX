@@ -6,6 +6,33 @@ function contactAlert() {
   alert("Message feature coming soon!");
 }
 
+// Theme toggle
+function toggleTheme() {
+  const body = document.body;
+  const toggleButton = document.getElementById('theme-toggle');
+  if (body.classList.contains('light-mode')) {
+    body.classList.remove('light-mode');
+    toggleButton.textContent = '🌙';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.add('light-mode');
+    toggleButton.textContent = '☀️';
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+// Set initial theme
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  const toggleButton = document.getElementById('theme-toggle');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+    toggleButton.textContent = '☀️';
+  } else {
+    toggleButton.textContent = '🌙';
+  }
+});
+
 // Player data
 const players = {
   RXZ: {
