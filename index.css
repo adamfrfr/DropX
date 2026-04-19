@@ -110,3 +110,8 @@ footer {
 #profileContent li {
   margin: 5px 0;
 }
+
+#contact {
+  text-align: center;
+  margin: 30px;
+}

@@ -40,6 +40,28 @@ const players = {
       winRate: "65%"
     },
     favWeapon: "AK-47"
+  },
+  Ifwat: {
+    name: "Ifwat",
+    role: "Thrower",
+    stats: {
+      kills: 0,
+      deaths: 950,
+      assists: 280,
+      winRate: "0%"
+    },
+    favWeapon: "Odin"
+  },
+  adam: {
+    name: "adam",
+    role: "THE GOAT",
+    stats: {
+      kills: 999999999999999,
+      deaths: 0,
+      assists: 0,
+      winRate: "1000%"
+    },
+    favWeapon: "Knife"
   }
 };
 
